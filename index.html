@@ -1,13 +1,501 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>self-introduction-261102</title>
+    <title>백의의 천사 | 학교 건강지킴이 · 특성화고등학교 보건교사</title>
   </head>
   <body>
-    <div id="app"></div>
+    <!-- 역동적인 의학·간호 테마 네온 배경 레이어 -->
+    <div class="bg-canvas" aria-hidden="true">
+      <div class="bg-grid"></div>
+      <div class="bg-glow bg-glow-blue"></div>
+      <div class="bg-glow bg-glow-purple"></div>
+      <div class="bg-glow bg-glow-pink"></div>
+
+      <!-- 부유하는 간호·의학·방역 심볼 SVG -->
+      <svg class="floating-symbol symbol-cross-1" viewBox="0 0 100 100" fill="none">
+        <path d="M38 12H62V38H88V62H62V88H38V62H12V38H38V12Z" stroke="currentColor" stroke-width="3" />
+      </svg>
+      <svg class="floating-symbol symbol-shield" viewBox="0 0 100 100" fill="none">
+        <path d="M50 8L86 22V48C86 71 70 86 50 94C30 86 14 71 14 48V22L50 8Z" stroke="currentColor" stroke-width="3" />
+        <path d="M44 34H56V44H66V56H56V66H44V56H34V44H44V34Z" stroke="currentColor" stroke-width="2.5" />
+      </svg>
+      <svg class="floating-symbol symbol-heart-pulse" viewBox="0 0 120 100" fill="none">
+        <path d="M60 88C60 88 14 60 14 33C14 19 25 10 38 10C47 10 55 15 60 23C65 15 73 10 82 10C95 10 106 19 106 33C106 60 60 88 60 88Z" stroke="currentColor" stroke-width="3" />
+        <path d="M22 48H42L49 32L59 64L67 42L73 48H98" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <svg class="floating-symbol symbol-caduceus" viewBox="0 0 100 100" fill="none">
+        <line x1="50" y1="12" x2="50" y2="90" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+        <circle cx="50" cy="10" r="5" stroke="currentColor" stroke-width="3" />
+        <path d="M16 26C28 18 40 24 50 30C60 24 72 18 84 26C74 36 62 38 50 34C38 38 26 36 16 26Z" stroke="currentColor" stroke-width="2.5" />
+        <path d="M34 44C42 38 58 38 66 44C58 52 42 52 34 60C42 68 58 68 66 60" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+      </svg>
+      <svg class="floating-symbol symbol-cross-2" viewBox="0 0 100 100" fill="none">
+        <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="2.5" stroke-dasharray="8 6" />
+        <path d="M42 26H58V42H74V58H58V74H42V58H26V42H42V26Z" stroke="currentColor" stroke-width="2.5" />
+      </svg>
+    </div>
+
+    <!-- 상단 네비게이션 헤더 -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#hero" class="brand-logo" aria-label="첫 화면으로 이동">
+          <span class="brand-icon" aria-hidden="true">✚</span>
+          <span class="brand-text">백의의 천사</span>
+          <span class="brand-badge">학교 건강지킴이</span>
+        </a>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="메뉴 열기" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="siteNav" aria-label="주요 메뉴">
+          <a href="#my-story" class="nav-link">나의 이야기</a>
+          <a href="#research-interests" class="nav-link">연구 관심사</a>
+          <a href="#research-projects" class="nav-link">보건연구활동</a>
+          <a href="#contact" class="nav-link nav-link-cta">연락처</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- 1. 첫 화면 (Hero 영역) -->
+      <section id="hero" class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-content reveal">
+            <div class="status-pill">
+              <span class="pulse-dot"></span>
+              <span>SCHOOL HEALTH GUARDIAN · 감염병 예방 및 보건교육 전문가</span>
+            </div>
+
+            <p class="hero-role">특성화고등학교 보건교사</p>
+
+            <!-- [수정 가능] 이름 및 타이틀 -->
+            <h1 class="hero-title">
+              학교 건강지킴이,<br />
+              <span class="gradient-text">백의의 천사</span>입니다
+            </h1>
+
+            <!-- [수정 가능] 대표 소개 문구 -->
+            <blockquote class="hero-quote">
+              “보건실과 지역사회를 연결하는 건강지킴이”
+            </blockquote>
+
+            <!-- [수정 가능] 보조 소개 문구 (임시 텍스트) -->
+            <p class="hero-description">
+              체계적인 감염병 예방과 학생 중심의 보건수업, 그리고 미래지향적 보건연구를 통해
+              안전하고 건강한 학교 생태계를 만들어 가는 보건의료인입니다.
+              <span class="editable-hint">[추후 본인의 세부 소개 및 인사말을 이곳에 자유롭게 수정해 주세요]</span>
+            </p>
+
+            <!-- 주요 영역 이동 버튼 -->
+            <div class="hero-actions">
+              <a href="#my-story" class="btn btn-primary">
+                <span>나의 이야기</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none">
+                  <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+              <a href="#research-projects" class="btn btn-secondary">
+                <span>보건연구활동</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 5V19M12 19L6 13M12 19L18 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 우측 비주얼 카드 (학교 건강지킴이 & 보건의료인 아이덴티티 그래픽) -->
+          <div class="hero-visual reveal">
+            <div class="guardian-card interactive-card">
+              <div class="guardian-card-glow"></div>
+              <div class="guardian-header">
+                <div class="medical-emblem" aria-hidden="true">
+                  <svg viewBox="0 0 80 80" fill="none">
+                    <path d="M40 6L70 18V38C70 57 57 70 40 76C23 70 10 57 10 38V18L40 6Z" stroke="url(#shieldGrad)" stroke-width="3" fill="rgba(0, 229, 255, 0.08)" />
+                    <path d="M34 26H46V36H56V48H46V58H34V48H24V36H34V26Z" fill="url(#crossGrad)" />
+                    <defs>
+                      <linearGradient id="shieldGrad" x1="10" y1="6" x2="70" y2="76" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#00E5FF" />
+                        <stop offset="0.5" stop-color="#A855F7" />
+                        <stop offset="1" stop-color="#FF2A85" />
+                      </linearGradient>
+                      <linearGradient id="crossGrad" x1="24" y1="26" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#00E5FF" />
+                        <stop offset="1" stop-color="#EC4899" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div>
+                  <span class="guardian-tag">HEALTH CARE PROFESSIONAL</span>
+                  <h2 class="guardian-name">백의의 천사</h2>
+                  <p class="guardian-sub">특성화고등학교 보건교사 · RN</p>
+                </div>
+              </div>
+
+              <!-- 심전도(ECG) 네온 펄스 라인 -->
+              <div class="ecg-monitor" aria-hidden="true">
+                <svg viewBox="0 0 400 70" preserveAspectRatio="none">
+                  <path
+                    class="ecg-line"
+                    d="M0 35 L90 35 L105 20 L120 50 L135 8 L152 62 L168 25 L180 35 L270 35 L285 22 L300 48 L315 12 L330 58 L345 30 L360 35 L400 35"
+                    fill="none"
+                  />
+                </svg>
+              </div>
+
+              <ul class="guardian-highlights">
+                <li>
+                  <span class="highlight-badge">방역·예방</span>
+                  <span>학교 감염병 예방 및 위기대응 시스템 운영</span>
+                </li>
+                <li>
+                  <span class="highlight-badge">보건수업</span>
+                  <span>학생 참여형·디지털 기반 특성화고 맞춤형 수업</span>
+                </li>
+                <li>
+                  <span class="highlight-badge">건강연계</span>
+                  <span>보건실과 가정·지역사회를 잇는 건강 안전망</span>
+                </li>
+              </ul>
+
+              <div class="guardian-placeholder-note">
+                <!-- [수정 가능] 경력/소속/자격 임시 텍스트 -->
+                <span>[소속 학교명 / 주요 자격 / 한 줄 약력 입력 영역]</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. 나의 이야기 & 교육 철학 -->
+      <section id="my-story" class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">MY STORY &amp; PHILOSOPHY</span>
+            <h2 class="section-title">나의 <span class="gradient-text">교육 철학</span></h2>
+            <p class="section-desc">
+              보건실을 넘어 교실과 삶 속에서 살아 숨 쉬는 건강 교육을 실천합니다.
+            </p>
+          </div>
+
+          <div class="cards-grid three-cols">
+            <!-- 교육 철학 1 -->
+            <article class="neon-card interactive-card reveal">
+              <div class="card-number">01</div>
+              <div class="card-icon icon-blue" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 13.8214 2.48697 15.5291 3.33782 17L2.5 21.5L7 20.6622C8.47087 21.513 10.1786 22 12 22Z" stroke="currentColor" stroke-width="1.8" />
+                  <path d="M9.5 9.5C9.5 8.11929 10.6193 7 12 7C13.3807 7 14.5 8.11929 14.5 9.5C14.5 10.5 13.8 11.3 12.8 11.7C12.3 11.9 12 12.4 12 13V13.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                  <circle cx="12" cy="16.5" r="1" fill="currentColor" />
+                </svg>
+              </div>
+              <h3 class="card-title">학생의 궁금증에서 출발하는 수업</h3>
+              <p class="card-text">
+                일방적인 지식 전달이 아닌, 학생들이 일상과 실습 현장에서 실제로 겪고 궁금해하는 건강·신체·감염병 질문에서 수업을 시작합니다.
+              </p>
+              <p class="placeholder-box">
+                [추후 수정: 실제 수업 사례나 학생들의 질문 에피소드를 이곳에 작성해 주세요]
+              </p>
+            </article>
+
+            <!-- 교육 철학 2 -->
+            <article class="neon-card interactive-card reveal">
+              <div class="card-number">02</div>
+              <div class="card-icon icon-purple" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M17 20H22V18C22 16.3431 20.6569 15 19 15C18.0444 15 17.1931 15.4468 16.6438 16.1429M17 20H7M17 20V18C17 17.3438 16.8736 16.717 16.6438 16.1429M7 20H2V18C2 16.3431 3.34315 15 5 15C5.95561 15 6.80686 15.4468 7.35625 16.1429M7 20V18C7 17.3438 7.12642 16.717 7.35625 16.1429M7.35625 16.1429C8.0935 14.301 9.89482 13 12 13C14.1052 13 15.9065 14.301 16.6438 16.1429M15 7C15 8.65685 13.6569 10 12 10C10.3431 10 9 8.65685 9 7C9 5.34315 10.3431 4 12 4C13.6569 4 15 5.34315 15 7Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h3 class="card-title">탐구와 대화를 통한 실용적인 학습</h3>
+              <p class="card-text">
+                토론, 실습, 데이터 탐색을 통해 스스로 건강 문제를 분석하고, 졸업 후 산업 현장과 사회에서도 즉시 활용할 수 있는 건강 역량을 기릅니다.
+              </p>
+              <p class="placeholder-box">
+                [추후 수정: 탐구·대화 중심 수업 운영 방식이나 활동 내용을 이곳에 작성해 주세요]
+              </p>
+            </article>
+
+            <!-- 교육 철학 3 -->
+            <article class="neon-card interactive-card reveal">
+              <div class="card-number">03</div>
+              <div class="card-icon icon-pink" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M4.5 12.5L10.5 18.5L19.5 5.5" stroke="currentColor" stroke-width="0" />
+                  <rect x="3" y="4" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.8" />
+                  <path d="M8 20H16M12 16V20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                  <path d="M7 10H9.5L11 7.5L13 12.5L14.5 10H17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h3 class="card-title">보건의료기술을 활용한 배움의 확장</h3>
+              <p class="card-text">
+                최신 보건의료기술과 웹 앱, 디지털 헬스케어 도구를 수업에 접목하여 시공간을 넘어 자기주도적으로 학습하고 체험할 수 있도록 돕습니다.
+              </p>
+              <p class="placeholder-box">
+                [추후 수정: 활용 중인 보건의료 에듀테크 도구나 수업 목표를 이곳에 작성해 주세요]
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. 주요 연구 관심사 -->
+      <section id="research-interests" class="section section-alt">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">RESEARCH INTERESTS</span>
+            <h2 class="section-title">주요 <span class="gradient-text">연구 관심사</span></h2>
+            <p class="section-desc">
+              감염병 예방부터 AI 디지털 보건교육, 보건윤리까지 미래 학교보건의 방향을 연구합니다.
+            </p>
+          </div>
+
+          <div class="interest-list">
+            <!-- 연구 관심사 1 -->
+            <div class="interest-item interactive-card reveal">
+              <div class="interest-badge badge-cyan">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 3L20 7V12C20 16.5 16.8 20.6 12 22C7.2 20.6 4 16.5 4 12V7L12 3Z" stroke="currentColor" stroke-width="1.8" />
+                  <path d="M12 8V16M8 12H16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div class="interest-body">
+                <div class="interest-meta">RESEARCH AREA 01 · 감염병 예방 및 학교보건</div>
+                <h3 class="interest-title">보건교육과 건강관리활동</h3>
+                <p class="interest-desc">
+                  학교 내 감염병 예방 교육, 응급처치, 학생 맞춤형 건강관리 프로그램을 체계화하여 학교와 지역사회의 건강 안전망을 강화합니다.
+                </p>
+                <div class="placeholder-inline">[세부 연구 주제 / 진행 중인 건강관리 활동 입력]</div>
+              </div>
+            </div>
+
+            <!-- 연구 관심사 2 -->
+            <div class="interest-item interactive-card reveal">
+              <div class="interest-badge badge-purple">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 2V4M12 20V22M4.93 4.93L6.34 6.34M17.66 17.66L19.07 19.07M2 12H4M20 12H22M4.93 19.07L6.34 17.66M17.66 6.34L19.07 4.93" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                  <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.8" />
+                </svg>
+              </div>
+              <div class="interest-body">
+                <div class="interest-meta">RESEARCH AREA 02 · 디지털 헬스 에듀테크</div>
+                <h3 class="interest-title">AI와 디지털 도구를 활용한 보건 수업</h3>
+                <p class="interest-desc">
+                  웹 기반 학습 퀴즈 앱, AI 도구, 인터랙티브 콘텐츠를 직접 개발·적용하여 학생들의 보건 학습 몰입도와 성취도를 높이는 방안을 연구합니다.
+                </p>
+                <div class="placeholder-inline">[세부 연구 주제 / AI·디지털 수업 적용 사례 입력]</div>
+              </div>
+            </div>
+
+            <!-- 연구 관심사 3 -->
+            <div class="interest-item interactive-card reveal">
+              <div class="interest-badge badge-pink">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 21C12 21 4 15.2 4 9.5C4 6.5 6.4 4 9.5 4C11.2 4 12.8 4.8 12 6C11.2 4.8 12.8 4 14.5 4C17.6 4 20 6.5 20 9.5C20 15.2 12 21 12 21Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="interest-body">
+                <div class="interest-meta">RESEARCH AREA 03 · 생명존중 및 의료윤리</div>
+                <h3 class="interest-title">보건윤리와 인간의 가치 확장</h3>
+                <p class="interest-desc">
+                  급변하는 보건의료 환경 속에서 생명존중, 돌봄의 가치, 보건의료윤리의식을 함양하여 타인과 공동체를 배려하는 건강한 시민으로의 성장을 돕습니다.
+                </p>
+                <div class="placeholder-inline">[세부 연구 주제 / 보건윤리 수업 및 연구 내용 입력]</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. 수업 및 연구 프로젝트 (보건연구활동) -->
+      <section id="research-projects" class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">CLASSES &amp; RESEARCH PROJECTS</span>
+            <h2 class="section-title">수업 및 <span class="gradient-text">연구 프로젝트</span></h2>
+            <p class="section-desc">
+              직접 기획·제작하여 수업과 보건교육 현장에 활용하고 있는 디지털 프로젝트입니다.
+            </p>
+          </div>
+
+          <div class="cards-grid three-cols">
+            <!-- 프로젝트 카드 1: 공중보건학 앱 퀴즈 -->
+            <article class="project-card interactive-card reveal">
+              <div class="project-card-top">
+                <span class="project-tag tag-cyan">WEB APP · QUIZ</span>
+                <span class="project-status">LIVE</span>
+              </div>
+              <h3 class="project-title">공중보건학 앱 퀴즈</h3>
+              <p class="project-desc">
+                공중보건학의 핵심 개념과 감염병 관리, 역학 및 환경보건 내용을 학생들이 언제 어디서나 재미있게 복습하고 점검할 수 있도록 제작한 인터랙티브 퀴즈 웹 앱입니다.
+              </p>
+              <p class="placeholder-box">
+                [추후 수정: 수업 활용 방법이나 주요 기능 설명을 추가로 입력해 주세요]
+              </p>
+              <div class="project-footer">
+                <a
+                  href="https://delightful-bunny-04c91b.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  <span>앱 바로가기</span>
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- 프로젝트 카드 2: 보건간호 앱 퀴즈 -->
+            <article class="project-card interactive-card reveal">
+              <div class="project-card-top">
+                <span class="project-tag tag-purple">WEB APP · NURSING</span>
+                <span class="project-status">LIVE</span>
+              </div>
+              <h3 class="project-title">보건간호 앱 퀴즈</h3>
+              <p class="project-desc">
+                특성화고등학교 보건간호 교과 내용을 바탕으로 기초 간호 기술과 임상·보건 지식을 실전 문제 풀이 형태로 학습할 수 있는 맞춤형 디지털 학습 도구입니다.
+              </p>
+              <p class="placeholder-box">
+                [추후 수정: 대상 학년이나 학습 효과 등 세부 설명을 추가로 입력해 주세요]
+              </p>
+              <div class="project-footer">
+                <a
+                  href="https://frabjous-sherbet-812e99.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  <span>앱 바로가기</span>
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- 프로젝트 카드 3: 추후 추가용 템플릿 카드 -->
+            <article class="project-card project-card-template interactive-card reveal">
+              <div class="project-card-top">
+                <span class="project-tag tag-pink">NEW PROJECT</span>
+                <span class="project-status status-upcoming">COMING SOON</span>
+              </div>
+              <h3 class="project-title">[새 프로젝트 제목 입력]</h3>
+              <p class="project-desc">
+                추후 공개할 수업 자료, 감염병 예방 캠페인, 또는 연구 프로젝트의 간단한 소개 문구를 이곳에 작성해 주세요.
+              </p>
+              <p class="placeholder-box">
+                [예시: 학교 감염병 예방 시뮬레이션 / 응급처치 가이드 웹앱 등]
+              </p>
+              <div class="project-footer">
+                <!-- [수정 가능] href 속성에 실제 프로젝트 주소를 입력해 주세요 -->
+                <a href="#research-projects" class="project-link project-link-muted">
+                  <span>[관련 링크 주소 연결 예정]</span>
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. 연락처 (Contact) -->
+      <section id="contact" class="section contact-section">
+        <div class="container">
+          <div class="contact-box interactive-card reveal">
+            <div class="contact-header">
+              <span class="section-eyebrow">CONTACT &amp; NETWORK</span>
+              <h2 class="section-title">함께 건강한 학교를 <span class="gradient-text">연결합니다</span></h2>
+              <p class="section-desc">
+                보건교육 연구, 에듀테크 수업 자료 교류, 학교보건 관련 문의는 언제든 환영합니다.
+              </p>
+            </div>
+
+            <div class="contact-grid">
+              <!-- 공식 이메일 카드 -->
+              <div class="contact-item">
+                <span class="contact-label">OFFICIAL EMAIL</span>
+                <a href="mailto:yktk100@sen.go.kr" class="contact-email">
+                  yktk100@sen.go.kr
+                </a>
+                <div class="contact-actions">
+                  <a href="mailto:yktk100@sen.go.kr" class="btn btn-primary btn-sm">
+                    메일 보내기
+                  </a>
+                  <button
+                    type="button"
+                    class="btn btn-secondary btn-sm"
+                    id="copyEmailBtn"
+                    data-email="yktk100@sen.go.kr"
+                  >
+                    이메일 복사
+                  </button>
+                </div>
+                <p class="copy-feedback" id="copyFeedback" role="status" aria-live="polite"></p>
+              </div>
+
+              <!-- 관련 사이트 링크 (추후 수정 가능한 임시 링크 영역) -->
+              <div class="contact-item">
+                <span class="contact-label">RELATED LINKS · 관련 사이트</span>
+                <ul class="related-links-list">
+                  <li>
+                    <a
+                      href="https://delightful-bunny-04c91b.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="related-link"
+                    >
+                      <span>공중보건학 앱 퀴즈</span>
+                      <span class="link-arrow">↗</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://frabjous-sherbet-812e99.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="related-link"
+                    >
+                      <span>보건간호 앱 퀴즈</span>
+                      <span class="link-arrow">↗</span>
+                    </a>
+                  </li>
+                  <li>
+                    <!-- [수정 가능] 블로그, 연구회, 학교 홈페이지 등 추가 사이트 링크 -->
+                    <a href="#contact" class="related-link related-link-placeholder">
+                      <span>[관련 사이트/블로그/연구회 링크 입력 영역]</span>
+                      <span class="link-arrow">＋</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="brand-icon" aria-hidden="true">✚</span>
+          <strong>백의의 천사</strong> · 특성화고등학교 보건교사
+        </div>
+        <p class="footer-copy">
+          “보건실과 지역사회를 연결하는 건강지킴이” · All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
